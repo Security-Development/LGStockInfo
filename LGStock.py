@@ -30,6 +30,7 @@ def get_view():
         print(str(i).split(' ')[0]+'에 LG 주식가격: ' + str(num_format(round(j))) + '원' + text)
         money = j
 
+plt.figure('LG Stock')
 plt.title('LG Stock')
 plt.plot(lg.index, lg['Adj Close'])
 get_view()
